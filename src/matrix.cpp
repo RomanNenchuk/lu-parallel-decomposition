@@ -16,6 +16,7 @@ void fillByFunction(Matrix &A, int n) {
             A[i][j] = sin(i + j) + 5;
 }
 
+// Перевірка результату: чи справді A = L * U
 bool verifyLU(const Matrix &A, const Matrix &L, const Matrix &U, int n) {
     double eps = 1e-6;
     for (int i = 0; i < n; i++)

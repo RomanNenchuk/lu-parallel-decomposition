@@ -1,5 +1,6 @@
 #include "../include/matrix.hpp"
 
+// Послідовний LU-розклад (еталон для вимірювання прискорення)
 void luSequential(const Matrix &A, Matrix &L, Matrix &U, int n) {
     for (int k = 0; k < n; k++) {
         // Рахуємо рядок U
